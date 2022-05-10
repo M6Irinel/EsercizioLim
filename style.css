@@ -1,0 +1,114 @@
+/* Ogni tag senza margine */
+* {
+    margin: 0px;
+}
+
+/* Qualsiasi Testo al di fuori del Testo del <button>, hanno il Font Poppis */
+:not(button) {
+    font-family: "Poppins", serif;
+}
+
+/* L'immagine di backround e anche il suo stato*/
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+/* Corpo transparente */
+body > div {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 62.5%;
+    height: 852px;
+    padding: 50px 100px 50px 100px;
+    margin: auto;
+    margin-top: 29px;
+    border-radius: 20px;
+}
+
+/* HEADER --------------------------------------------------------- */
+
+/* Logo, Titolo e <nav> sono centrati */
+header, nav {
+    text-align: center;
+}
+
+/* Dimensione e posizionamento del <img> Lim */
+img {
+    width: 25%;
+    margin-top: 51px;
+    margin-bottom: -2px;
+}
+
+/* Titolo: Font e Colore */
+h1 {
+    font-size: 30px;
+    color: rgb(0, 221, 0);
+}
+
+/* NAV ------------------------------------------------------------ */
+
+/* Zona dei pulsanti */
+nav {
+    padding: 10px;
+    background-color: rgb(0, 221, 0);
+}
+
+/* Cambio del cursore su Pointer appena si va su un <button> */
+button {
+    cursor: pointer;
+}
+
+/* MAIN ----------------------------------------------------------- */
+
+/* Tutte i <div> del <main> */
+main > div {
+    margin-top: 19px;
+    margin-bottom: 27px;
+}
+
+/* Spostare tutti gli <input> */
+input {
+    margin: 4px;
+}
+
+/* Modificare tutti gli <h2> */
+h2 {
+    display: inline-block;
+    font-family: "Poppins" serif;
+    font-size: 23px;
+}
+
+/* Il Font di tutti i <p> */
+p {
+    font-size: medium;
+}
+
+/* Colore bianco per tutti gli <h2> e <p> */
+h2, p {
+    color: white;
+}
+
+/* Altezza di tutti i div vuoti + raggio bordo*/
+div:empty {
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* Il <div> della (I) Prima zona di colore Arancione */
+div:first-child > div:empty {
+    width: 35%;
+    background-color: rgb(255, 184, 52);
+}
+
+/* Il <div> della (II) Secconda zona e di colore Verde */
+div:nth-of-type(2) > div:empty {
+    width: 60%;
+    background-color: rgb(0, 189, 0);
+}
+
+/* Il <div> della (III) Terza zona e di colore Rosso */
+div:last-child > div:empty {
+    width: 15%;
+    background-color: rgb(190, 69, 69);
+}
